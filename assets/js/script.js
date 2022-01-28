@@ -10,7 +10,11 @@ document.addEventListener("DOMContentLoaded", () => {
       subject: document.querySelector("#subject").value,
       message: document.querySelector("#message").value,
     };
-    const response = await axios.post("http://localhost:4000/send-mail", data);
+
     // console.log(data);
+    const response = await axios.post(
+      "https://contactform-lereacteur-jp.herokuapp.com/send-mail",
+      data
+    );
   });
 });
