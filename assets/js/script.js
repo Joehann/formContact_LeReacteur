@@ -16,5 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "https://contactform-lereacteur-jp.herokuapp.com/send-mail",
       data
     );
+
+    console.log(response.data);
   });
 });
