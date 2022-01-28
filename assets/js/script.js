@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       subject: document.querySelector("#subject").value,
       message: document.querySelector("#message").value,
     };
-    console.log(data);
+    const response = await axios.post("http://localhost:4000/send-mail");
+    // console.log(data);
   });
 });
